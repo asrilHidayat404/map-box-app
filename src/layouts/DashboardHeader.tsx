@@ -14,7 +14,8 @@ const DashboardHeader = () => {
     <div className="w-full flex flex-col overflow-y-hidden">
       {/* Desktop Header */}
       <header className="w-full items-center shadow-white shadow-sm mb-4 py-4 px-6 hidden sm:flex">
-        <div className="w-1/2">
+        <div className="w-1/2 flex gap-x-4">
+          <Link href="/" className="text-blue-500 hover:underline">Home</Link>
           {breadcrumbs.map((crumb, index) => (
             <span key={index} className="breadcrumb-item">
               {index > 0 && " > "}
